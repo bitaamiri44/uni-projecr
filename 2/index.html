@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>صف اولویت ماکسیمم</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>صف اولویت ماکسیمم</h1>
+
+            <div class="form-group">
+                <h2>اضافه کردن فرد جدید</h2>
+                <input type="number" id="age" placeholder="سن" />
+                <input type="text" id="skill" placeholder="توانایی (a تا f)" />
+                <button onclick="addPerson()">اضافه کن</button>
+            </div>
+
+            <div class="form-group">
+                <h2>انتخاب فرد برتر</h2>
+                <button onclick="extractMax()">انتخاب فرد برتر</button>
+                <p id="max-person"></p>
+            </div>
+
+            <div class="form-group">
+                <h2>افزایش سطح فرد</h2>
+                <input type="number" id="update-age" placeholder="سن" />
+                <input
+                    type="text"
+                    id="update-skill"
+                    placeholder="توانایی فعلی (a تا f)"
+                />
+                <input
+                    type="text"
+                    id="new-skill"
+                    placeholder="توانایی جدید (a تا f)"
+                />
+                <button onclick="increaseSkill()">افزایش سطح</button>
+            </div>
+
+            <div class="form-group">
+                <h2>لیست افراد در صف</h2>
+                <button onclick="showQueue()">نمایش صف</button>
+                <ul id="queue-list"></ul>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
